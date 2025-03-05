@@ -33,7 +33,7 @@ function choisirPhrasesOuMots() {
  * @param {array[string]} listePropositions 
  * @return {number} : le score de l'utilisateur
  */
-function lancerBoucleDeJeu(listePropositions) {
+function lancerBoucleJeu(listePropositions) {
     let score = 0
     for (let i = 0; i < listePropositions.length; i++) {
         // On demande à l'utilisateur de saisir le mot correspondant à l'indice i
@@ -58,10 +58,10 @@ function lancerJeu() {
 
     // On détermine la liste des mots ou des phrases à proposer à l'utilisateur
     if (choix === "mots") {
-        score = lancerBoucleDeJeu(listeMots)
+        score = lancerBoucleJeu(listeMots)
         nbMotsProposes = listeMots.length
     } else {
-        score = lancerBoucleDeJeu(listePhrases)
+        score = lancerBoucleJeu(listePhrases)
         nbMotsProposes = listePhrases.length
     }
 
