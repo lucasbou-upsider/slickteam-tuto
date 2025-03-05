@@ -40,10 +40,10 @@ function verifictation_mot(){
 
 //bouton phrase et bouton mot
 let boutonphrase = document.getElementById("phrases")
-let btnmots = document.getElementById("words")
+let boutonmots = document.getElementById("words")
 
 
-btnmots.addEventListener("click", function(){
+boutonmots.addEventListener("click", function(){
     phraseoumots = "mots"
     console.log(phraseoumots)
     })
